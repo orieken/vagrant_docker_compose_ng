@@ -1,0 +1,10 @@
+app:
+  image: metal3d/ng
+  command: serve -port 49200
+  ports:
+    - 49200:49200
+    - 49152:49152
+  restart: always
+  user: 1000:1000
+  volumes:
+    - ./potatoes:/project
